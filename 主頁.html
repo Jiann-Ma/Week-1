@@ -2,22 +2,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"></meta>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"></meta>
         <title>第一週作業</title>
         <style type="text/css">
-        .head{
-            color:#351E29; font-weight: bold; font-size: 20px; text-align: left; font-family:Microsoft JhengHei;
-            width: auto; line-height: 40px; padding: 10px; margin: 0px;
-            float:left;
+        .firstLine-root{
+            background-color:#6DD3CE; color:#351E29; font-weight: bold; font-size: 20px; font-family:Microsoft JhengHei;
+            margin: 0px auto; 
         }
-        .head-items{
-            color:#351E29; font-weight: bold; font-size: 20px; text-align: right; font-family:Microsoft JhengHei;
-            width: auto; line-height: 40px; padding: 10px; margin: 0px;
-            float:right;
+        .firstLine-root .firstLine{
+            vertical-align: top; float:left; 
+            line-height: 40px; padding: 10px; margin: 0px; text-align: left;
+            
+        }
+        .firstLine-root .firstLine-items{
+            vertical-align: top; 
+            line-height: 40px; padding: 10px; margin: 0px; text-align: right;
         }
         .welcome{
             background-color:#C8E9A0; font-weight: bold; font-size: 40px; text-align: center; font-family:Microsoft JhengHei; font-style:italic;
-            line-height: 300px; padding: 10px; margin: 0px;
+            line-height: 150px; padding: 10px; margin: 0px;
         }
         .content1{
             background-color: #F7A278; margin-left: auto; margin-right: auto; 
@@ -27,14 +30,31 @@
             display: inline-block; vertical-align: bottom; width: 300px; margin: 0px auto; font-weight: bold; font-size: 20px; text-align: center; font-family:Microsoft JhengHei;
         }
         .box .img{
-            display: inline-block; border:2px #ccc solid;padding:auto;
+            display: inline-block; border:0px #ccc solid;padding:auto; margin-left: 2px; margin-left: 2px
+        }
+        .content2{
+            margin:0px auto; width: 90%;
+        }
+        .box2{
+            background-color: azure; display: inline-block; vertical-align: bottom; width: 45%; border: 0px auto; font-weight: bold; font-size: 20px; text-align: bottom; font-family:Microsoft JhengHei;
+            padding:auto; 
+        }
+        .box2 .img{
+            border:0px #ccc solid;padding:auto; display: inline-block;  
+        }
+        @media screen and (min-width:900px) { 
+            .box2 .img{
+                width: 450px;
+            }
         }
         </style>
     </head>
     <body style="margin:0px; background-color: #6DD3CE;">
-        <div class="head"><u>健騰的第一週作業</u></div>
-        <div class="head-items">Item1　Item2　Item3　Item4</div>
-        <div class="welcome">與你們分享我難忘的日本假期</div>
+        <div class="firstLine-root">
+            <div class="firstLine"><u>健騰的第一週作業：要求一</u></div>
+            <div class="firstLine-items">Item1　Item2　Item3　Item4</div>
+        </div>
+        <div class="welcome">快樂的日本假期：合掌村、黑部立山</div>
         <div class="content1">
             <div class="box">
                 <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/1.png?raw=true">
@@ -69,6 +89,39 @@
                 去水壩要搭乘纜車
             </div>
         </div>
+    
+    <div class="firstLine-root">
+        <div class="firstLine"><u>健騰的第一週作業：要求二</u></div>
+        <div class="firstLine-items">Item1　Item2　Item3　Item4</div>
+    </div>
+    <div class="welcome">快樂的日本假期：高山上高地、下呂</div>
+    <div class="content2">
+        <div class="box2">
+            <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/9.png?raw=true">
+            <span style="display: block;">在高級燒肉店吃最便宜的和牛</span>
+        </div>
+        <div class="box2">
+            <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/10.png?raw=true">
+            <span style="display: block;">舒服的溫泉旅館</span>
+        </div>
+        <div class="box2">
+            <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/11.png?raw=true">
+            <span style="display: block;">青山頂著白帽子</span>
+        </div>
+        <div class="box2">
+            <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/12.png?raw=true">
+            <span style="display: block;">清澈的小溪</span>
+         </div>
+        <div class="box2">
+            <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/13.png?raw=true">
+            <span style="display: block;">泡完溫泉喝牛奶</span>
+        </div>
+        <div class="box2">
+            <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/14.png?raw=true">
+            <span style="display: block;">另一條漂亮的溪流與青山</span>
+        </div>
+        </div>
+    </div>
         
     </body>
 </html>
