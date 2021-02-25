@@ -57,14 +57,15 @@ main>.item{ /* 項目 */
 }
 .img1{
     flex:none;
-}
-main>.img2{
-    flex:none;
+    max-width: 20px;
 }
 @media (max-width:1200px){
     main>.item{
         width: 45%;
     }
+    nav>.firstLine-items{
+        display: block;
+    } 
     .img1{
         display: none;
     }
@@ -75,5 +76,8 @@ main>.img2{
     }
     nav>.firstLine-items{
         display: none;
+    }
+    .img1{
+        display: block;
     }  
 }
