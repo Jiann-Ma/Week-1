@@ -1,84 +1,59 @@
-<!-- https://jiann-ma.github.io/Week-1/%E4%B8%BB%E9%A0%81.html -->
+<!-- https://jiann-ma.github.io/Week-1/%E4%B8%BB%E9%A0%81.html    <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/2.png?raw=true">-->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8"></meta>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> <!--不要做縮放-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> <!--為了不要做縮放-->
         <title>第一週作業</title>
-        <style type="text/css">
-        .firstLine-root{
-            background-color:#6DD3CE; color:#351E29; font-weight: bold; font-size: 20px; font-family:Microsoft JhengHei;
-            margin: 0px auto; 
-        }
-        .firstLine-root .firstLine{
-            vertical-align: top; float:left; 
-            line-height: 40px; padding: 10px; margin: 0px; text-align: left;
-            
-        }
-        .firstLine-root .firstLine-items{
-            vertical-align: top; 
-            line-height: 40px; padding: 10px; margin: 0px; text-align: right;
-        }
-        .welcome{
-            background-color:#C8E9A0; font-weight: bold; font-size: 40px; text-align: center; font-family:Microsoft JhengHei; font-style:italic;
-            line-height: 150px; padding: 10px; margin: 0px;
-        }
-        .content{
-            background-color: #F7A278; margin-left: auto; margin-right: auto; width: auto;
-        }
-        .box{
-            display: inline-block; vertical-align: bottom; width: 300px; margin: 0px auto; font-weight: bold; font-size: 20px; text-align: center; font-family:Microsoft JhengHei; 
-        }
-        .box .img{
-            display: inline-block; border:0px #ccc solid; padding:auto;
-        }
-        @media screen and (min-width: 1200px){
-            .content{
-            margin:0px auto; width: 100%; text-align: center;
-            }
-        }
-        </style>
+        <link href="homeWork-1-CSS.css" rel="stylesheet" type="text/css" media="all" />
     </head>
-    <body style="margin:0px; background-color: #6DD3CE;">
-        <div class="firstLine-root">
-            <div class="firstLine"><u>健騰的第一週作業：要求一</u></div>
-            <div class="firstLine-items">Item1　Item2　Item3　Item4</div>
-        </div>
-        <div class="welcome">快樂的日本假期：合掌村、黑部立山</div>
-        <div class="content">
-            <div class="box">
-                <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/1.png?raw=true">
+    <body>
+        <nav>
+            <div class="firstLine"><u>健騰的第一週作業</u></div>
+            <div class="firstLine-items">
+                <span style="margin:10px">Item1</span>
+                <span style="margin:10px">Item2</span>
+                <span style="margin:10px">Item3</span>
+                <span style="margin:10px">Item4</span>
+            </div>
+        </nav> 
+        <!--<div class="hamburger"><img class="img1" src="https://github.com/Jiann-Ma/Week-1/blob/main/hanburger.png?raw=true"></div> -->
+        <div class="welcome">快樂的日本假期：合掌村、黑部立山</div> 
+        <!--Flex解決：並排切欄-->
+        <!--
+            RWD解決：欄位變化
+            1200px 以上：4欄，固定尺寸
+            600px~1200px：2欄(90%)，彈性尺寸
+            600px 以下：1欄，彈性尺寸
+        -->
+        <main>
+            <div class="item"><img class="img2" src="https://github.com/Jiann-Ma/Week-1/blob/main/1.png?raw=true"><br/>
                 漂亮的合掌村
             </div>
-            <div class="box">
-                <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/2.png?raw=true">
+            <div class="item"><img class="img2" src="https://github.com/Jiann-Ma/Week-1/blob/main/2.png?raw=true"><br/>
                 那時候有點胖@@...
             </div>
-            <div class="box">
-                <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/3.png?raw=true">
+            <div class="item"><img class="img2" src="https://github.com/Jiann-Ma/Week-1/blob/main/3.png?raw=true"><br/>
                 房間很小的旅館
             </div>
-            <div class="box">
-                <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/4.png?raw=true">
+            <div class="item"><img class="img2" src="https://github.com/Jiann-Ma/Week-1/blob/main/4.png?raw=true"><br/>
                 合掌村旁的小溪
             </div>
-            <div class="box">
-                <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/5.png?raw=true">
+        </main>
+        <main>
+            <div class="item"><img class="img2" src="https://github.com/Jiann-Ma/Week-1/blob/main/5.png?raw=true"><br/>
                 黑部立山大水壩
             </div>
-            <div class="box">
-                <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/6.png?raw=true">
+            <div class="item"><img class="img2" src="https://github.com/Jiann-Ma/Week-1/blob/main/6.png?raw=true"><br/>
                 懶散的猴子
             </div>
-            <div class="box">
-                <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/7.png?raw=true">    
+            <div class="item"><img class="img2" src="https://github.com/Jiann-Ma/Week-1/blob/main/7.png?raw=true"><br/>
                 沒有特色但便宜的燒肉
             </div>
-            <div class="box">
-                <img class="img" src="https://github.com/Jiann-Ma/Week-1/blob/main/8.png?raw=true">
+            <div class="item"><img class="img2" src="https://github.com/Jiann-Ma/Week-1/blob/main/8.png?raw=true"><br/>
                 去水壩要搭乘纜車
             </div>
-        </div>
+        </main>
     </body>
 </html>
 

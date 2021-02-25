@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+}
+/*nav樣式設定*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6DD3CE;
+    
+}
+nav>.firstLine{
+    flex: none;
+    color:#351E29;
+    font-weight: bold; 
+    font-size: 20px; 
+    font-family: Microsoft JhengHei;
+    margin: 5px;
+}
+nav>.firstLine-items{
+    flex: none; /* none代表這個項目無法自動縮放 */
+    color:#351E29;
+    font-weight: bold; 
+    font-size: 20px; 
+    font-family: Microsoft JhengHei;
+    margin: 5px;
+}
+
+.welcome{
+    word-break: normal;
+    text-align: center;
+    background-color:#C8E9A0;
+    font-weight: bold; 
+    font-size: 40px; 
+    text-align: center; 
+    font-family:Microsoft JhengHei; 
+    font-style:italic;
+    height: 300px; 
+    line-height: 300px; 
+    padding: 10px; 
+    margin: 0px;
+}
+main{ /* 容器 */
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7A278; 
+}
+main>.item{ /* 項目 */
+    flex:none;
+    width:300px;
+    margin: 10px; 
+    font-weight: bold; 
+    font-size: 20px; 
+    text-align: center; 
+    font-family:Microsoft JhengHei;
+    background-color: azure;
+}
+.img1{
+    flex:none;
+}
+main>.img2{
+    flex:none;
+}
+@media (max-width:1200px){
+    main>.item{
+        width: 45%;
+    }
+    .img1{
+        display: none;
+    }
+}
+@media (max-width:600px){
+    main>.item{
+        width: 90%;
+    }
+    nav>.firstLine-items{
+        display: none;
+    }  
+}
