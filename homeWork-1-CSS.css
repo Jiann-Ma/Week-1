@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: #F7A278; 
 }
 /*nav樣式設定*/
 nav{
@@ -24,6 +25,7 @@ nav>.firstLine-items{
 }
 .welcome{
     word-break: normal;
+    flex-wrap: wrap;
     text-align: center;
     background-color:#C8E9A0;
     font-weight: bold; 
@@ -43,15 +45,18 @@ nav>.firstLine-items{
     display: none;
 }
 main{ /* 容器 */
-    display: flex; flex-wrap: wrap;
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
     justify-content: center;
     align-items: center;
     background-color: #F7A278; 
-    margin: auto;
+    margin: 0 auto;
 }
 main>.item{ /* 項目 */
     flex:none;
-    width:300px;
+    width:290px;
     margin: auto; 
     font-weight: bold; 
     font-size: 20px; 
@@ -61,12 +66,19 @@ main>.item{ /* 項目 */
 }
 .img2{ /* 項目 */
     flex:none;
-    width:270px;
+    width:100%;
     margin: auto; 
 }
 @media (max-width:1200px){
+    main{
+        width: 90%;     /*縮到1200以下的時候，白背景會超過圖片大小。所以不要設寬度，或者設定100%。width:100%就可以跟著父容器了*/
+        margin: auto; 
+    }
     main>.item{
-        width: 45%;
+        width: 50%;
+    }
+    main>.img2{
+        width: 50%;
     }
     nav>.firstLine-items{
         display: block;
@@ -74,8 +86,14 @@ main>.item{ /* 項目 */
     }
 }
 @media (max-width:600px){
-    main>.item{
+    main{
         width: 90%;
+    }
+    main>.item{
+        width: 100%;
+    }
+    main>.img2{
+        width: 100%;
     }
     nav>.firstLine-items{
         display: none;
