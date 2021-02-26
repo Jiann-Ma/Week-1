@@ -52,7 +52,7 @@ main{ /* 容器 */
     justify-content: center;
     align-items: center;
     background-color: #F7A278; 
-    margin: 0 auto;
+    margin: auto;
 }
 main>.item{ /* 項目 */
     flex:none;
@@ -75,7 +75,8 @@ main>.item{ /* 項目 */
         margin: auto;
     }
     main>.item{
-        width: 50%;
+        width: 49%;
+        margin: 4px;
     }
     main>.img2{
         width: 50%;
