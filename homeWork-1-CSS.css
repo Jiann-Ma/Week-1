@@ -65,28 +65,29 @@ main>.item{ /* 項目 */
     background-color: azure;
 }
 .img2{ /* 項目 */
-    flex:none;
-    width:100%;
+    flex: none;
+    width: 100%;
     margin: auto; 
 }
-@media (max-width:1200px){
+@media (max-width: 1200px) and (min-width: 600px){
     main{
         width: 90%;     /*縮到1200以下的時候，白背景會超過圖片大小。所以不要設寬度，或者設定100%。width:100%就可以跟著父容器了*/
         margin: auto;
     }
     main>.item{
-        width: 49%;
-        margin: 4px;
+        width: 48%;
+        margin: 2px;
     }
     main>.img2{
-        width: 50%;
+        width: 100%;
     }
     nav>.firstLine-items{
         display: block;
         margin-left: auto;
     }
-}
-@media (max-width:600px){
+}   
+
+@media (max-width: 600px){
     main{
         width: 90%;
     }
